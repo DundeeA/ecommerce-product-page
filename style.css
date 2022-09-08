@@ -1,32 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 header {
   display: flex;
   align-items: center;
   text-align: center;
-  min-width: 100vw;
-  padding: 2.15vh 0 2.9vh 6vw;
+  position: absolute;
+  background: white;
+  min-width: 100%;
+  padding: 2.15vh 0vw 2.9vh 0;
   margin: 0;
-}
-header button {
-  display: flex;
-  align-items: center;
-  background: rgba(255, 255, 255, 0) no-repeat center;
-  background-size: cover;
-  aspect-ratio: 1;
-  width: 5.6vw;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-header .cart-btn {
-  background-image: url("./images/icon-cart.svg");
-  margin: 0 6.5vw 0 0;
-}
-header .nav-btn {
-  background-image: url("./images/icon-menu.svg");
-  width: 4.5vw;
-}
-header .profile-btn {
-  background-image: url("./images/image-avatar.png");
 }
 header .logo {
   margin: 0 23.4vw 0.3vh 5vw;
@@ -40,7 +21,164 @@ nav ul {
   list-style-type: none;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-container {
+  overflow: hidden;
+  max-height: 48vh;
+}
+
+.primary-img {
+  margin-top: 3.5vh;
+  max-width: 100vw;
+  z-index: 0;
+}
+
+.brand-name {
+  font-size: 0.8rem;
+  letter-spacing: 0.07rem;
+  font-weight: 700;
+  text-align: left;
+  color: hsl(26deg, 100%, 55%);
+  margin: 2.5vh 0 0 6.5vw;
+}
+
+.product-title {
+  font-size: 1.77rem;
+  margin: 1vh 0 0 6.5vw;
+  max-width: 89vw;
+}
+
+.product-desc {
+  font-size: 0.95rem;
+  line-height: 2.8vh;
+  max-width: 87vw;
+  margin: 1.5vh 0 0 6.5vw;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1.6vh 0 0 0;
+}
+.price-container .price {
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin: 0 4.7vw 0 6.5vw;
+}
+.price-container .discount {
+  color: hsl(26deg, 100%, 55%);
+  font-weight: 700;
+  background-color: hsl(25deg, 100%, 94%);
+  padding: 0.5% 2% 0.5% 2%;
+  border-radius: 0.3rem;
+}
+.price-container .old-price {
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(220deg, 14%, 75%);
+  text-decoration: line-through;
+  margin: 0 0 0.5vh 25.4vw;
+}
+
+.qtty-container {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  min-width: 77%;
+  padding: 1% 5% 1% 5%;
+  border-radius: 0.6rem;
+  margin: 1.4vh 0 0 0;
+  background-color: hsl(223deg, 64%, 98%);
+}
+.qtty-container p {
+  font-weight: 700;
+}
+.qtty-container .decrease-btn {
+  background-size: 60%;
+  background-image: url("./images/icon-minus.svg");
+}
+.qtty-container .increase-btn {
+  background-size: 60%;
+  background-image: url("./images/icon-plus.svg");
+}
+
+.add-cart-btn {
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  align-self: center;
+  min-width: 87%;
+  padding: 4.8%;
+  margin: 1.6vh 0 4rem 0;
+  border-radius: 0.6rem;
+  background-color: hsl(26deg, 100%, 55%);
+  color: hsl(0deg, 0%, 100%);
+  aspect-ratio: auto;
+}
+.add-cart-btn img {
+  height: 1rem;
+  margin-right: 0.9rem;
+  margin-left: -0.4rem;
+  filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(232deg) brightness(103%) contrast(101%);
+}
+
+button {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0) no-repeat center;
+  background-size: cover;
+  aspect-ratio: 1;
+  width: 5.6vw;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.cart-btn {
+  background-image: url("./images/icon-cart.svg");
+  margin: 0 6.5vw 0 0;
+  filter: invert(43%) sepia(16%) saturate(88%) hue-rotate(184deg) brightness(100%) contrast(93%);
+}
+
+.nav-btn {
+  background-image: url("./images/icon-menu.svg");
+  width: 4.5vw;
+  margin-left: 6vw;
+}
+
+.profile-btn {
+  background-image: url("./images/image-avatar.png");
+}
+
+.prev-btn {
+  background-image: url("./images/icon-previous.svg");
+  position: absolute;
+  transform: translateY(-517%);
+  left: 4.3vw;
+  padding: 5.5%;
+  background-color: white;
+  background-size: 30%;
+  border-radius: 100%;
+}
+
+.next-btn {
+  background-image: url("./images/icon-next.svg");
+  position: absolute;
+  transform: translateY(-517%);
+  right: 4.3vw;
+  padding: 5.5%;
+  background-color: white;
+  background-size: 30%;
+  border-radius: 100%;
+}
+
 body {
+  font-family: "Kumbh Sans", sans-serif;
   margin: 0;
   padding: 0;
 }
