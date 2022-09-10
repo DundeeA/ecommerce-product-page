@@ -1,6 +1,5 @@
+/*buttons*/
 button
-    display: flex
-    align-items: center
     background: rgba(255, 255, 255, 0) no-repeat center
     background-size: cover
 
@@ -10,9 +9,10 @@ button
     margin: 0
     padding: 0
     border: 0
+button:hover
+    cursor: pointer
 .cart-btn
          background-image: url("./images/icon-cart.svg")
-         margin: 0 6.5vw 0 0
          filter: invert(43%) sepia(16%) saturate(88%) hue-rotate(184deg) brightness(100%) contrast(93%)
 .nav-btn
         background-image: url("./images/icon-menu.svg")
@@ -20,21 +20,22 @@ button
         margin-left: 6vw
 .profile-btn
     background-image: url("./images/image-avatar.png")
+    margin: 0 7vw 0 5vw
 .prev-btn
+     display: flex
+     align-items: center
      background-image: url("./images/icon-previous.svg")
-     position: absolute
-     transform: translateY(-517%)
-     left: 4.3vw
      padding: 5.5%
      background-color: white
      background-size: 30% 
      border-radius: 100%
+     margin: 1rem
 .next-btn
+     display: flex
+     align-items: center
      background-image: url("./images/icon-next.svg")
-     position: absolute
-     transform: translateY(-517%)
-     right: 4.3vw
      padding: 5.5%
      background-color: white
      background-size: 30% 
      border-radius: 100%
+     margin: 1rem

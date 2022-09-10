@@ -12,6 +12,8 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="./javascript/jquery-3.6.1-slim-min.js"></script>
+    <script src="./javascript/app.js" defer></script>
     <title>E-commerce product page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -27,8 +29,10 @@
   </head>
   <body>
     <header>
+     <div class="header-left">
       <button aria-label="open navigation" class="nav-btn"></button>
       <img src="./images/logo.svg" alt="logo" class="logo" />
+     </div>
 
       <nav>
         <ul>
@@ -40,46 +44,52 @@
         </ul>
       </nav>
 
-      <button aria-label="view cart" class="cart-btn"></button>
-      <button aria-label="view profile" class="profile-btn"></button>
+      <div class="header-right">
+        <button aria-label="view cart" class="cart-btn"></button>
+        <button aria-label="view profile" class="profile-btn"></button>
+      </div>
     </header>
+
     <main>
-      <div class="primary-container">
-        <img
-          src="./images/image-product-1.jpg"
-          alt="product"
-          class="primary-img"
-        />
+      <div class="image-container">
         <button aria-label="previous image" class="prev-btn"></button>
         <button aria-label="next image" class="next-btn"></button>
       </div>
 
+      <div class="primary-container">
+      
       <p class="brand-name">SNEAKER COMPANY</p>
-      <h1 class="product-title">Fall Limited Edition Sneakers</h1>
-      <p class="product-desc">
-        These low-profile sneakers are your perfect casual wear companion.
-        Featuring a durable rubber outer sole, they’ll withstand everything the
-        weather can offer.
-      </p>
+        <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+          <p class="product-desc">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything the
+          weather can offer.
+          </p>
 
-     <div class="price-container">
-      <p class="price">$125.00</p>
-      <p class="discount">50%</p>
-      <p class="old-price">$250.00</p>
-     </div>
+        <div class="price-container">
+          <div class="price-left">
+            <p class="price">$125.00</p>
+            <p class="discount">50%</p>
+          </div>
+          <p class="old-price">$250.00</p>
+         </div>
+    
+    
+         <div class="add-items-section">
+         <div class="qtty-container">
+            <button aria-label="decrease quantity" class="decrease-btn"></button>
+            <p class="qtty">0</p>
+            <button aria-label="increase quantity" class="increase-btn"></button> 
+         </div>
+    
+         <button aria-label="add product to cart" class="add-cart-btn">
+         <img src="./images/icon-cart.svg" alt="">
+         Add to cart
+         </button> 
+         
+         </div>
 
-    <!--qtty (quantity)-->
-    <div class="qtty-container">
-      <button aria-label="decrease quantity" class="decrease-btn"></button>
-      <p class="qtty">0</p>
-      <button aria-label="increase quantity" class="increase-btn"></button> 
-    </div>
-
-    <button aria-label="add product to cart" class="add-cart-btn">
-       <img src="./images/icon-cart.svg" alt="">
-       Add to cart
-    </button>
-
+      </div>
     </main>
 
     <!--
@@ -87,6 +97,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
--->
+-->  
+
   </body>
 </html>
