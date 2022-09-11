@@ -12,7 +12,7 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="./javascript/jquery-3.6.1-slim-min.js"></script>
+    <script src="./javascript/jquery-3.6.1-min.js"></script>
     <script src="./javascript/app.js" defer></script>
     <title>E-commerce product page</title>
 
@@ -28,6 +28,7 @@
     </style>
   </head>
   <body>
+   
     <header>
      <div class="header-left">
       <button aria-label="open navigation" class="nav-btn"></button>
@@ -35,12 +36,13 @@
      </div>
 
       <nav>
+        <button aria-label="close navigation" class="close-nav-btn"></button>
         <ul>
-          <li>Collections</li>
-          <li>Men</li>
-          <li>Women</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a href="#">Collections</a></li>
+          <li> <a href="#">Men</a></li>
+          <li> <a href="#">Women</a></li>
+          <li> <a href="#">About</a></li>
+          <li> <a href="#">Contact</a></li>
         </ul>
       </nav>
 
@@ -73,9 +75,9 @@
           </div>
           <p class="old-price">$250.00</p>
          </div>
-    
-    
+
          <div class="add-items-section">
+
          <div class="qtty-container">
             <button aria-label="decrease quantity" class="decrease-btn"></button>
             <p class="qtty">0</p>
@@ -90,14 +92,39 @@
          </div>
 
       </div>
+
+      <div class="cart-menu">
+        <h2>Cart</h2>
+        <hr>
+        
+        <div class="cart-item">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="prodcut">
+         <div class="product-info">
+           <p class="title">Autumn Limited Edition Sneakers</p>
+           <div class="price-info"> 
+            <p class="price-calc">
+              
+            </p>
+            <p class="final-price"></p>
+          </div>
+        </div>
+         <button aria-label="remove item" class="remove-btn"></button>
+        </div>
+
+
+         <p class="empty-text">Your cart is empty</p> 
+
+        <button aria-label="check out" class="checkout-btn">Checkout</button>
+       </div>
+
     </main>
 
     <!--
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
--->  
+     <div class="attribution">
+       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+       Coded by <a href="#">Your Name Here</a>.
+     </div>
+    -->  
 
   </body>
 </html>

@@ -16,6 +16,35 @@ header
   
 nav
         display: none
-        margin: 0
+        opacity: 0
+        flex-direction: column
+        align-items: flex-start
+
+        position: absolute
+        top: 0
+        left: -60vw
+
+        height: 100vh
+        min-width: 67vw
+
+        box-shadow: 0px 0px 0vw 200vw rgba(0, 0, 0, 0.75)
+        background-color: white
+        overflow: hidden
+        z-index: 1
         ul
+         font-size: 1.1rem
+         font-weight: 700
+         text-align: left
          list-style-type: none
+         margin: 0
+         padding: 0
+         li
+          margin-bottom: 2.8vh
+          margin-left: 7vw
+         a
+          color: black
+          text-decoration: none
+        .close-nav-btn
+          background-image: url('./images/icon-close.svg')
+          width: 3.5vw
+          margin: 3vh 0 5.5vh 7vw
