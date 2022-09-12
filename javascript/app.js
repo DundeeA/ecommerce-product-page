@@ -45,9 +45,12 @@ $(".add-cart-btn").click(function(){
    $('.empty-text').hide();
    $('.cart-item').css('display', 'flex');
    $('.checkout-btn').show();
+   $('.cart-text').fadeIn();
+
 
    $('.price-calc').text(`$125 x ${quantity}`);
    $('.final-price').text(`$${125 * quantity}`);
+   $('.cart-text').text(quantity);
    quantity = 0;
    $('.qtty').html(quantity);
 });
@@ -56,4 +59,5 @@ $('.remove-btn').click(function(){
     $('.empty-text').show();
     $('.cart-item').hide();
     $('.checkout-btn').hide();
+    $('.cart-text').hide();
 });
