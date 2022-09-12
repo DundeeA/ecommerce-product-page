@@ -72,11 +72,11 @@ hr {
   min-height: 35.5vh;
   max-width: 100vw;
   margin: 5.5vh 0 0 0;
-  background-image: url("./images/image-product-1.jpg");
-  background-position: 50% 35%;
-  background-size: 100%;
-  background-repeat: no-repeat;
   overflow: hidden;
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
 }
 
 /*Text area*/
@@ -304,6 +304,7 @@ button:hover {
   background-size: 30%;
   border-radius: 100%;
   margin: 1rem;
+  position: absolute;
 }
 
 .next-btn {
@@ -315,6 +316,8 @@ button:hover {
   background-size: 30%;
   border-radius: 100%;
   margin: 1rem;
+  position: absolute;
+  right: 1vw;
 }
 
 .remove-btn {
