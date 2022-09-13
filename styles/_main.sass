@@ -6,6 +6,7 @@ $leftmargin: 6.5vw
 main
  display: flex
  flex-direction: column
+ align-items: center
 
 hr
  border-top: 1px solid rgb(229, 228, 228)
@@ -185,6 +186,22 @@ hr
         color: $white
 
   
+@media (min-width: 27em)
+    main
+      max-width: 90vw
+    .image-container
+        .prev-btn
+          left: 8%
+          padding: 5%
+        .next-btn
+           right: 8%
+           padding: 5%
+
+
+
+@media (min-width: 42em)
+
+
 
 
 
