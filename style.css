@@ -263,6 +263,14 @@ hr {
   .image-container {
     width: 85%;
   }
+  .cart-menu {
+    width: 70vw;
+    left: 14vw;
+  }
+  .cart-menu .product-info {
+    width: 20vw;
+    margin: 0 0 0 5.2%;
+  }
 }
 @media (min-width: 36em) {
   main {
