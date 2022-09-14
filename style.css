@@ -195,6 +195,7 @@ hr {
   height: auto;
   border-radius: 0.7rem;
   background-color: hsl(0deg, 0%, 100%);
+  box-shadow: 0.3em 0.4em 0.5em rgba(29, 29, 29, 0.4901960784);
 }
 .cart-menu h2 {
   font-size: 1rem;
@@ -221,7 +222,7 @@ hr {
   border-radius: 5%;
 }
 .cart-menu .cart-item .product-info {
-  width: 57vw;
+  width: 65%;
   margin: 0 0 0 5.2%;
 }
 .cart-menu .cart-item .price-info {
@@ -256,6 +257,7 @@ hr {
   color: hsl(0deg, 0%, 100%);
 }
 
+/*Tablet media queries*/
 @media (min-width: 26em) {
   main {
     max-width: 90vw;
@@ -264,17 +266,17 @@ hr {
     width: 85%;
   }
   .cart-menu {
-    width: 70vw;
-    left: 14vw;
-  }
-  .cart-menu .product-info {
-    width: 20vw;
-    margin: 0 0 0 5.2%;
+    width: 80vw;
+    left: 10vw;
   }
 }
 @media (min-width: 36em) {
   main {
     max-width: 70vw;
+  }
+  .cart-menu {
+    width: 70vw;
+    left: 15vw;
   }
 }
 @media (min-width: 45em) {
@@ -283,6 +285,10 @@ hr {
   }
   .image-container {
     margin-top: 10vh;
+  }
+  .cart-menu {
+    width: 60vw;
+    left: 20vw;
   }
 }
 /*buttons*/
@@ -358,9 +364,11 @@ button:hover {
 }
 
 .remove-btn {
-  margin: 0vh 0vw 0 5.4vw;
+  position: relative;
+  right: 0;
   width: 1rem;
   height: 1.1rem;
+  margin: 0;
   background-image: url("./images/icon-delete.svg");
 }
 

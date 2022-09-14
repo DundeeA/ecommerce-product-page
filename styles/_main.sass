@@ -137,6 +137,7 @@ hr
 
     border-radius: .7rem
     background-color: $white
+    box-shadow: .3em .4em .5em #1d1d1d7d
     h2
         font-size: 1rem
         margin-left: 6vw
@@ -158,7 +159,7 @@ hr
             width: 12.5vw
             border-radius: 5%
         .product-info
-            width: 57vw
+            width: 65%
             margin: 0 0 0 5.2%
         .price-info
             display: flex
@@ -189,27 +190,36 @@ hr
         color: $white
 
   
+
+
+/*Tablet media queries*/
+
 @media (min-width: 26em)
     main
       max-width: 90vw
     .image-container
        width: 85%
     .cart-menu
-        width: 70vw
-        left: 14vw
-        .product-info
-            width: 20vw
-            margin: 0 0 0 5.2%
+        width: 80vw
+        left: 10vw
 
 @media (min-width: 36em)
     main
       max-width: 70vw
+    .cart-menu
+        width: 70vw
+        left: 15vw
+
 
 @media (min-width: 45em)
     main
       max-width: 60vw
     .image-container
        margin-top: 10vh
+    .cart-menu
+        width: 60vw
+        left: 20vw
+
 
 
 
