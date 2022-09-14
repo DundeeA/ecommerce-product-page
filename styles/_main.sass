@@ -1,13 +1,13 @@
 $orange: hsl(26, 100%, 55%)
 $paleorange: hsl(25, 100%, 94%)
 $white: hsl(0, 0%, 100%)
-$leftmargin: 6.5vw
+$leftmargin: 0
 
 main
  display: flex
  flex-direction: column
  align-items: center
-
+ max-width: 100vw
 hr
  border-top: 1px solid rgb(229, 228, 228)
 
@@ -82,14 +82,16 @@ hr
 /*Add item section*/ 
 .add-items-section
     display: flex
+    justify-content: center
     flex-direction: column
-
+    width: 100%
     .qtty-container
         display: flex
         justify-content: space-between
         align-self: center
 
-        min-width: 77%
+        
+        width: 90%
         padding: 1% 5% 1% 5%
         border-radius: .6rem
         margin: 1.4vh 0 0 0
@@ -111,7 +113,7 @@ hr
         justify-content: center
         align-self: center
 
-        min-width: 87%
+        width: 100%
         padding: 4.8%
         margin: 1.6vh 0 4rem 0
         border-radius: .6rem
@@ -196,7 +198,6 @@ hr
 
 @media (min-width: 26em)
     main
-      max-width: 90vw
     .image-container
        width: 85%
     .cart-menu
@@ -205,7 +206,8 @@ hr
 
 @media (min-width: 36em)
     main
-      max-width: 70vw
+    .image-container
+       width: 75%
     .cart-menu
         width: 70vw
         left: 15vw
@@ -213,15 +215,41 @@ hr
 
 @media (min-width: 45em)
     main
-      max-width: 60vw
     .image-container
        margin-top: 10vh
+       width: 65%
     .cart-menu
         width: 60vw
         left: 20vw
 
 
 
+/*Desktop queries*/    
+@media (min-width: 56em)
+    *
+       font-size: 16px
+
+    main
+      flex-direction: row
+      justify-content: center
+      align-items: center
+      height: 90vh
+    .primary-container
+       width: 35%
+       margin: 0 0 0 5vw
+    .image-container
+        width: 50%
+        margin: 0
+    .add-items-section
+       justify-content: center
+       align-items: center
+       flex-direction: row
+       .add-cart-btn
+          margin: 0
+       .decrease-btn
+             width: 2rem
+       .increase-btn
+            width: 2rem
 
 
 
