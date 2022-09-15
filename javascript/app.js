@@ -95,13 +95,11 @@ $(".prev-btn").click(function () {
   updateImage();
 });
 
- 
+//desktop image selector
 $(".img-selection").click(function () {
   let img = $(this).children('img').attr("src");
   $(".primary-image").attr("src", img);
 }) 
-
-
 
 function updateImage() {
   $(".primary-image").attr("src", images[currentImage]);

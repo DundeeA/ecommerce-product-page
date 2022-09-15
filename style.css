@@ -89,6 +89,7 @@ hr {
   margin-top: 8%;
 }
 .image-container .img-selector button {
+  border-radius: 15%;
   width: 20%;
 }
 .image-container .img-selector button img {
@@ -385,6 +386,7 @@ button:hover {
 
 .profile-btn {
   background-image: url("./images/image-avatar.png");
+  border-radius: 100%;
   margin: 0 7vw 0 5vw;
 }
 
@@ -423,6 +425,14 @@ button:hover {
   height: 1.1rem;
   margin: 0;
   background-image: url("./images/icon-delete.svg");
+}
+
+.orange-border:hover {
+  border: 3px solid hsl(26deg, 100%, 55%);
+}
+
+.lighten:hover {
+  opacity: 0.6;
 }
 
 body {
