@@ -94,6 +94,7 @@ hr {
 }
 .image-container .img-selector button img {
   width: 100%;
+  height: 101%;
   border-radius: 15%;
 }
 
@@ -427,11 +428,24 @@ button:hover {
   background-image: url("./images/icon-delete.svg");
 }
 
+/*Hover effects*/    
 .orange-border:hover {
   border: 3px solid hsl(26deg, 100%, 55%);
 }
 
 .lighten:hover {
+  opacity: 0.6;
+}
+
+/*Selected image styles*/
+.selected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid hsl(26deg, 100%, 55%);
+  border-collapse: collapse;
+}
+.selected img {
   opacity: 0.6;
 }
 
