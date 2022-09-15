@@ -18,7 +18,6 @@ hr
     position: relative
 
     height: auto
-    max-height: 45vh
     min-height: 35.5vh
 
 
@@ -29,9 +28,18 @@ hr
     margin: 5.5vh 0 0 0
     overflow: hidden
     img
-        min-width: 100%
-        height: 100%
+        max-width: 100%
         z-index: -1
+    .img-selector
+        display: flex
+        justify-content: space-between
+        width: 100%
+        margin-top: 8%
+        button
+            width: 20%
+            img
+                width: 100%
+                border-radius: 15%
 
 
 /*Text area*/
@@ -41,16 +49,16 @@ hr
     font-weight: 700
     text-align: left
     color: $orange
-    margin: 2.5vh 0 0 $leftmargin
+    margin: 7% 0 0 $leftmargin
 .product-title
     font-size: 1.77rem
-    margin: 1vh 0 0 $leftmargin
+    margin: 5% 0 0 $leftmargin
     max-width: 89vw
 .product-desc
     font-size: .95rem
     line-height: 2.8vh
     max-width: 87vw
-    margin: 1.5vh 0 0 $leftmargin
+    margin: 3% 0 0 $leftmargin
 
 /*Price*/
 .price-container
@@ -200,6 +208,8 @@ hr
     main
     .image-container
        width: 85%
+       img
+        border-radius: 5%
     .cart-menu
         width: 80vw
         left: 10vw
@@ -238,8 +248,13 @@ hr
        width: 35%
        margin: 0 0 0 5vw
     .image-container
-        width: 50%
+        flex-direction: column
+        width: 40%
         margin: 0
+        .prev-btn
+           display: none
+        .next-btn
+            display: none
     .add-items-section
        justify-content: center
        align-items: center
