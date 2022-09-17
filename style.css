@@ -34,7 +34,6 @@ nav {
   z-index: 1;
 }
 nav ul {
-  font-size: 1.1rem;
   font-weight: 700;
   text-align: left;
   list-style-type: none;
@@ -48,6 +47,7 @@ nav ul li {
 nav ul a {
   color: black;
   text-decoration: none;
+  font-size: 1rem;
 }
 nav .close-nav-btn {
   background-image: url("./images/icon-close.svg");
@@ -344,6 +344,36 @@ hr {
   }
   .add-items-section .increase-btn {
     width: 2rem;
+  }
+  .add-items-section .qtty-container {
+    margin: 0;
+  }
+  header nav {
+    display: flex;
+    opacity: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+    height: auto;
+    width: auto;
+    min-width: 0vw;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-weight: 400;
+  }
+  header nav ul li {
+    margin: 0 0 0 1rem;
+  }
+  header nav ul a {
+    color: hsl(219deg, 9%, 45%);
+    font-size: 0.9rem;
+  }
+  header .nav-btn, header .close-nav-btn {
+    display: none;
   }
 }
 /*buttons*/

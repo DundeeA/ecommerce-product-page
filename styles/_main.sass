@@ -1,6 +1,7 @@
 $orange: hsl(26, 100%, 55%)
 $paleorange: hsl(25, 100%, 94%)
 $white: hsl(0, 0%, 100%)
+$grayishblue: hsl(219, 9%, 45%)
 $leftmargin: 0
 
 main
@@ -264,7 +265,32 @@ hr
              width: 2rem
        .increase-btn
             width: 2rem
+       .qtty-container
+            margin: 0
+    header
+       nav
+        display: flex
+        opacity: 1
 
+        position: relative
+        top: 0
+        left: 0
 
+        box-shadow: none
+        height: auto
+        width: auto
+        min-width: 0vw
+        ul
+           display: flex
+           flex-direction: row
 
-
+           text-align: center
+           font-weight: 400
+           li
+            margin: 0 0 0 1rem
+           a
+            color: $grayishblue
+            font-size: .9rem
+       .nav-btn, .close-nav-btn
+           display: none
+         
