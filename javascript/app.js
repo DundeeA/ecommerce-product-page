@@ -76,6 +76,7 @@ let images = [ "./images/image-product-1.jpg",
 ]; 
 
 $(".next-btn").click(function () {
+  console.log('next button click');
   if (currentImage === images.length - 1) {
     currentImage = 0;
     updateImage();
