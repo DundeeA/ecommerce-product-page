@@ -51,18 +51,18 @@ hr
 
 /*Text area*/
 .brand-name
-    font-size: .8rem
-    letter-spacing: 0.07rem
+    font-size: .8em
+    letter-spacing: 0.07em
     font-weight: 700
     text-align: left
     color: $orange
     margin: 0 0 0 0
 .product-title
-    font-size: 1.77rem
+    font-size: 1.77em
     margin: 5% 0 0 0
     max-width: 89vw
 .product-desc
-    font-size: .95rem
+    font-size: .95em
     line-height: 2.8vh
     max-width: 87vw
     margin: 3% 0 0 0
@@ -302,6 +302,28 @@ hr
             font-size: .9rem
        .nav-btn, .close-nav-btn
            display: none
+    .price-container
+       flex-direction: column
+       align-items: flex-start
+       .price
+          font-size: 1.85rem
+          font-weight: 700
+          margin: 0 4.7vw 0 0
+       .discount
+           color: $orange
+           font-weight: 700
+           background-color: $paleorange
+           padding: 1% 2% 1% 2%
+           border-radius: .3rem
+       .old-price
+           font-size: 1rem
+           font-weight: 700
+           color: hsl(220, 14%, 75%)
+           text-decoration: line-through
+           margin-right: 7vw
+       .price-left
+
+
 
 @media (min-width: 72em)
     main
@@ -329,8 +351,30 @@ hr
         margin: .3vh 0 0 2.25vw
         width: 10vw
     main
+        .primary-container
+            font-size: 1.5rem
+            margin: 3vh 1vw 0 9vw
+            width: 30%
+            height: 100%
+            .brand-name
+               font-size: .5em
+               letter-spacing: .2em 
+               margin: 3.2vh 0 1.8vh 0
+            .product-title
+               font-size: 1.8em
+               margin: 1vh 0 0 0
+            .product-desc
+                font-size: 0.68em
+                margin: 3.5vh 0 0 0
+            .price-container
+               .price
+                margin: 0 1vw 0 0
+               .old-price
+                margin: 0
+            .add-items-section
+               margin-top: 4vh
         .image-container
-            margin: -0.5vh 0 0 5.5vw
+            margin: -2vh 0 0 0vw
             width: 31%
             .img-selector
                 margin: 3.2vh 0 0 0

@@ -107,8 +107,8 @@ hr {
 
 /*Text area*/
 .brand-name {
-  font-size: 0.8rem;
-  letter-spacing: 0.07rem;
+  font-size: 0.8em;
+  letter-spacing: 0.07em;
   font-weight: 700;
   text-align: left;
   color: hsl(26deg, 100%, 55%);
@@ -116,13 +116,13 @@ hr {
 }
 
 .product-title {
-  font-size: 1.77rem;
+  font-size: 1.77em;
   margin: 5% 0 0 0;
   max-width: 89vw;
 }
 
 .product-desc {
-  font-size: 0.95rem;
+  font-size: 0.95em;
   line-height: 2.8vh;
   max-width: 87vw;
   margin: 3% 0 0 0;
@@ -398,6 +398,29 @@ hr {
   header .nav-btn, header .close-nav-btn {
     display: none;
   }
+  .price-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .price-container .price {
+    font-size: 1.85rem;
+    font-weight: 700;
+    margin: 0 4.7vw 0 0;
+  }
+  .price-container .discount {
+    color: hsl(26deg, 100%, 55%);
+    font-weight: 700;
+    background-color: hsl(25deg, 100%, 94%);
+    padding: 1% 2% 1% 2%;
+    border-radius: 0.3rem;
+  }
+  .price-container .old-price {
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(220deg, 14%, 75%);
+    text-decoration: line-through;
+    margin-right: 7vw;
+  }
 }
 @media (min-width: 72em) {
   main .image-container {
@@ -430,8 +453,36 @@ hr {
     margin: 0.3vh 0 0 2.25vw;
     width: 10vw;
   }
+  main .primary-container {
+    font-size: 1.5rem;
+    margin: 3vh 1vw 0 9vw;
+    width: 30%;
+    height: 100%;
+  }
+  main .primary-container .brand-name {
+    font-size: 0.5em;
+    letter-spacing: 0.2em;
+    margin: 3.2vh 0 1.8vh 0;
+  }
+  main .primary-container .product-title {
+    font-size: 1.8em;
+    margin: 1vh 0 0 0;
+  }
+  main .primary-container .product-desc {
+    font-size: 0.68em;
+    margin: 3.5vh 0 0 0;
+  }
+  main .primary-container .price-container .price {
+    margin: 0 1vw 0 0;
+  }
+  main .primary-container .price-container .old-price {
+    margin: 0;
+  }
+  main .primary-container .add-items-section {
+    margin-top: 4vh;
+  }
   main .image-container {
-    margin: -0.5vh 0 0 5.5vw;
+    margin: -2vh 0 0 0vw;
     width: 31%;
   }
   main .image-container .img-selector {
