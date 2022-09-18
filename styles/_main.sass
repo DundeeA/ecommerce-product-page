@@ -3,7 +3,6 @@ $paleorange: hsl(25, 100%, 94%)
 $white: hsl(0, 0%, 100%)
 $grayishblue: hsl(219, 9%, 45%)
 
-
 main
  display: inline-flex
  justify-content: center
@@ -42,8 +41,9 @@ hr
             width: 20%
             img
                 width: 100%
-                height: 101%
+                height: 100%
                 border-radius: 15%
+                z-index: 0
 
 .primary-container
     margin: 0 0 0 0
@@ -99,28 +99,25 @@ hr
     display: flex
     justify-content: center
     flex-direction: column
-    width: 100%
+    width: 31vw
     .qtty-container
         display: flex
         justify-content: space-between
         align-self: center
-
-        
-        width: 90%
-        padding: 1% 5% 1% 5%
+        padding: 0
         border-radius: .6rem
         margin: 1.4vh 0 0 0
-
-        background-color: hsl(223, 64%, 98%)
+        min-width: 34%
+        overflow: visible
+        background-color: hsl(223, 604%, 200%)
         p
           font-weight: 700
         .decrease-btn
-             background-size: 60%
+             background-size: 40%
              background-image: url("./images/icon-minus.svg")
         .increase-btn
-             background-size: 60%
+             background-size: 40%
              background-image: url("./images/icon-plus.svg")
-
     .add-cart-btn
         font-size: 1rem
         font-weight: 700
@@ -128,9 +125,10 @@ hr
         justify-content: center
         align-self: center
 
-        width: 100%
-        padding: 4.8%
-        margin: 1.6vh 0 0 0
+        width: 61%
+        height: 3.5rem
+        padding: 0%
+        margin: 0 0 0 1vw
         border-radius: .6rem
 
         background-color: $orange
@@ -267,9 +265,6 @@ hr
           justify-content: center
           align-items: center
           flex-direction: row
-          .add-cart-btn
-             margin: 0
-             width: 100%
           .decrease-btn
                 width: 2rem
           .increase-btn
@@ -321,9 +316,6 @@ hr
            color: hsl(220, 14%, 75%)
            text-decoration: line-through
            margin-right: 7vw
-       .price-left
-
-
 
 @media (min-width: 72em)
     main
