@@ -366,22 +366,25 @@ hr {
     display: flex;
     justify-content: space-between;
     align-self: center;
-    padding: 0;
     border-radius: 0.6rem;
-    margin: 0;
-    min-width: 34%;
+    margin: 0 1.4vw 1.3vh 0;
+    padding: 0;
     overflow: visible;
     background-color: hsl(223deg, 64%, 98%);
+    width: 55%;
+    height: 3.7rem;
   }
   main .add-items-section .qtty-container p {
     font-weight: 700;
   }
   main .add-items-section .qtty-container .decrease-btn {
-    background-size: 40%;
+    width: 2.5rem;
+    background-size: 25%;
     background-image: url("./images/icon-minus.svg");
   }
   main .add-items-section .qtty-container .increase-btn {
-    background-size: 40%;
+    width: 2.5rem;
+    background-size: 25%;
     background-image: url("./images/icon-plus.svg");
   }
   main .add-items-section .add-cart-btn {
@@ -389,10 +392,10 @@ hr {
     font-weight: 700;
     justify-content: center;
     align-self: center;
-    width: 61%;
-    height: 3.5rem;
+    flex-grow: 1;
+    height: 3.7rem;
     padding: 0%;
-    margin: 0 0 0 1vw;
+    margin: 0 0 1.3vh 0;
     border-radius: 0.6rem;
     background-color: hsl(26deg, 100%, 55%);
     color: hsl(0deg, 0%, 100%);

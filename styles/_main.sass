@@ -268,19 +268,23 @@ hr
             display: flex
             justify-content: space-between
             align-self: center
-            padding: 0
             border-radius: .6rem
-            margin: 0
-            min-width: 34%
+            margin: 0 1.4vw 1.3vh 0
+            padding: 0
             overflow: visible
             background-color: hsl(223, 64%, 98%)
+
+            width: 55%
+            height: 3.7rem
             p
                font-weight: 700
             .decrease-btn
-               background-size: 40%
+               width: 2.5rem
+               background-size: 25%
                background-image: url("./images/icon-minus.svg")
             .increase-btn
-               background-size: 40%
+               width: 2.5rem
+               background-size: 25%
                background-image: url("./images/icon-plus.svg")
           .add-cart-btn
              font-size: 1rem
@@ -289,10 +293,12 @@ hr
              justify-content: center
              align-self: center
 
-             width: 61%
-             height: 3.5rem
+             flex-grow: 1
+             
+ 
+             height: 3.7rem
              padding: 0%
-             margin: 0 0 0 1vw
+             margin: 0 0 1.3vh 0
              border-radius: .6rem
 
              background-color: $orange
@@ -349,8 +355,6 @@ hr
            color: hsl(220, 14%, 75%)
            text-decoration: line-through
            margin-right: 7vw
-
-
 
 @media (min-width: 72em)
     main
