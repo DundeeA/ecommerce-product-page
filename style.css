@@ -57,15 +57,6 @@ nav .close-nav-btn {
   margin: 3vh 0 5.5vh 7vw;
 }
 
-.header-hr {
-  display: none;
-  position: absolute;
-  width: 94%;
-  top: 10.5vh;
-  left: 2.5vw;
-  border: 1px hsl(223deg, 64%, 98%) solid;
-}
-
 main {
   display: inline-flex;
   justify-content: center;
@@ -416,14 +407,19 @@ hr {
     margin-left: -0.4rem;
     filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(232deg) brightness(103%) contrast(101%);
   }
+  header {
+    border-bottom: 1px solid #d7d8e0;
+    padding-bottom: 3.5vh;
+  }
   header nav {
     display: flex;
+    justify-content: center;
     opacity: 1;
     position: relative;
     top: 0;
     left: 0;
     box-shadow: none;
-    height: auto;
+    height: 100%;
     width: auto;
     min-width: 0vw;
   }
