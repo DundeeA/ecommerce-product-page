@@ -57,6 +57,15 @@ nav .close-nav-btn {
   margin: 3vh 0 5.5vh 7vw;
 }
 
+.header-hr {
+  display: none;
+  position: absolute;
+  width: 94%;
+  top: 10.5vh;
+  left: 2.5vw;
+  border: 1px hsl(223deg, 64%, 98%) solid;
+}
+
 main {
   display: inline-flex;
   justify-content: center;
@@ -433,6 +442,9 @@ hr {
   }
   header .nav-btn, header .close-nav-btn {
     display: none;
+  }
+  header .header-hr {
+    display: block;
   }
   .price-container {
     flex-direction: column;
