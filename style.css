@@ -222,6 +222,7 @@ hr {
   border-radius: 0.7rem;
   background-color: hsl(0deg, 0%, 100%);
   box-shadow: 0.3em 0.4em 0.5em rgba(29, 29, 29, 0.4901960784);
+  z-index: 1;
 }
 .cart-menu h2 {
   font-size: 1rem;

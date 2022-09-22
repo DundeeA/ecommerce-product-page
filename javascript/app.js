@@ -98,13 +98,12 @@ $(".prev-btn").click(function () {
 
 //desktop image selector
 $(".img-selection").click(function () {
+
   let img = $(this).children('img').attr("src");
   $(".primary-image").attr("src", img);
 
-
   $('.selected').removeClass('selected');
   $(this).addClass('selected');
-
 }) 
 
 function updateImage() {
