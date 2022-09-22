@@ -314,7 +314,10 @@ hr
 
     header
        border-bottom: 1px solid #d7d8e0
-       padding-bottom: 3.5vh
+       height: 10vh 
+       padding: 0 0 1.6vh 0
+       .header-left
+        height: 100%
        nav
         display: flex
         justify-content: center
@@ -328,17 +331,20 @@ hr
         height: 100%
         width: auto
         min-width: 0vw
+        overflow: visible
         ul
            display: flex
+           align-items: center
            flex-direction: row
 
            text-align: center
            font-weight: 400
+           height: 100%
            li
-            margin: 0 0 0 1rem
+            margin: 0
            a
             color: $grayishblue
-            font-size: .9rem
+            font-size: 1rem
        .nav-btn, .close-nav-btn
            display: none
        .header-hr
@@ -377,7 +383,7 @@ hr
         min-width: 35vw
         ul
           li
-           margin: 0 2.4vw 0 0vw
+           margin: 0 2vw 0 0vw
       .header-right
          width: auto
          .profile-btn
