@@ -242,6 +242,7 @@ hr {
   margin: 9.5% 0 0 2%;
   padding: 2% 5% 0 5%;
   font-size: 1.1rem;
+  width: auto;
   color: hsl(220deg, 14%, 75%);
 }
 .cart-menu .cart-item img {
@@ -473,10 +474,22 @@ hr {
     text-decoration: line-through;
     margin-right: 7vw;
   }
+  .cart-menu {
+    width: 50vw;
+    top: 9vh;
+    left: 45vw;
+    padding: 0 1rem 0 0;
+  }
 }
 @media (min-width: 72em) {
   main .image-container {
     width: 30%;
+  }
+  .cart-menu {
+    width: 40vw;
+    top: 9vh;
+    left: 55vw;
+    padding: 0 3rem 0 0;
   }
 }
 @media (min-width: 85em) {
@@ -540,6 +553,12 @@ hr {
   main .image-container .img-selector {
     margin: 3.2vh 0 0 0;
   }
+  .cart-menu {
+    width: 35vw;
+    top: 10vh;
+    left: 60vw;
+    padding: 0 3rem 0 0;
+  }
 }
 @media (min-width: 114em) {
   * {
@@ -550,6 +569,12 @@ hr {
   }
   main .image-container {
     width: 27%;
+  }
+  .cart-menu {
+    width: 25vw;
+    top: 9vh;
+    left: 55vw;
+    padding: 0 3rem 0 0;
   }
 }
 /*buttons*/
@@ -630,7 +655,7 @@ button:hover {
   right: 0;
   width: 1rem;
   height: 1.1rem;
-  margin: 0;
+  margin: 0 0 1rem 1rem;
   background-image: url("./images/icon-delete.svg");
 }
 
