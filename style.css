@@ -437,9 +437,10 @@ hr {
     text-align: center;
     font-weight: 400;
     height: 100%;
+    margin-left: 3vw;
   }
   header nav ul li {
-    margin: 0;
+    margin: 0 2vw 0 0;
   }
   header nav ul a {
     color: hsl(219deg, 9%, 45%);
@@ -573,8 +574,20 @@ hr {
   .cart-menu {
     width: 25vw;
     top: 9vh;
-    left: 55vw;
-    padding: 0 3rem 0 0;
+    left: 65vw;
+    padding: 0;
+  }
+  .cart-menu .checkout-btn {
+    margin: 4% 0 5% 8%;
+  }
+  .cart-menu .cart-item {
+    width: 70%;
+  }
+  .cart-menu .cart-item .remove-btn {
+    margin-left: 10%;
+  }
+  .cart-menu .cart-item img {
+    width: 30%;
   }
 }
 /*buttons*/
