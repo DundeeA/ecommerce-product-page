@@ -503,6 +503,10 @@ hr {
   .cart-menu .checkout-btn {
     margin-left: 3vw;
   }
+  .cart-btn .cart-text {
+    top: -2vh !important;
+    left: 3vw !important;
+  }
 }
 @media (min-width: 85em) {
   header {
@@ -525,6 +529,11 @@ hr {
   }
   header .header-right .cart-btn {
     width: 1.2rem;
+  }
+  header .header-right .cart-btn .cart-text {
+    font-size: 0.7rem;
+    top: -1vh !important;
+    left: 0.3vw !important;
   }
   header .logo {
     margin: 0.3vh 0 0 2.25vw;
