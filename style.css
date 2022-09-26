@@ -276,7 +276,6 @@ hr {
   display: none;
   font-size: 1rem;
   font-weight: 700;
-  min-width: 87%;
   height: 6.5vh;
   padding: 4.8%;
   margin: 3vh 0vw 3.5vh 6vw;
@@ -476,10 +475,19 @@ hr {
     margin-right: 7vw;
   }
   .cart-menu {
-    width: 50vw;
+    width: auto;
+    min-width: 30vw;
     top: 9vh;
     left: 45vw;
-    padding: 0 1rem 0 0;
+  }
+  .cart-menu h2 {
+    margin-left: 3vw;
+  }
+  .cart-menu .cart-item img {
+    width: 25%;
+  }
+  .checkout-btn {
+    width: 60%;
   }
 }
 @media (min-width: 72em) {
@@ -487,10 +495,8 @@ hr {
     width: 30%;
   }
   .cart-menu {
-    width: 40vw;
     top: 9vh;
     left: 55vw;
-    padding: 0 3rem 0 0;
   }
 }
 @media (min-width: 85em) {
@@ -555,10 +561,8 @@ hr {
     margin: 3.2vh 0 0 0;
   }
   .cart-menu {
-    width: 35vw;
     top: 10vh;
     left: 60vw;
-    padding: 0 3rem 0 0;
   }
 }
 @media (min-width: 114em) {
@@ -570,24 +574,6 @@ hr {
   }
   main .image-container {
     width: 27%;
-  }
-  .cart-menu {
-    width: 25vw;
-    top: 9vh;
-    left: 65vw;
-    padding: 0;
-  }
-  .cart-menu .checkout-btn {
-    margin: 4% 0 5% 8%;
-  }
-  .cart-menu .cart-item {
-    width: 70%;
-  }
-  .cart-menu .cart-item .remove-btn {
-    margin-left: 10%;
-  }
-  .cart-menu .cart-item img {
-    width: 30%;
   }
 }
 /*buttons*/
