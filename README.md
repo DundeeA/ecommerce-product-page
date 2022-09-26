@@ -1,6 +1,6 @@
 # Frontend Mentor - ecommerce product page
 
-This is my solution to the [Ecommerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH/). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is my solution to the [Ecommerce product page challenge](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH/) on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
