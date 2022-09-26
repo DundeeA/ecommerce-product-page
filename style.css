@@ -250,6 +250,7 @@ hr {
 .cart-menu .cart-item .product-info {
   width: 65%;
   margin: 0 0 0 5.2%;
+  align-items: center;
 }
 .cart-menu .cart-item .price-info {
   display: flex;
