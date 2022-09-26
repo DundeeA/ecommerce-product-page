@@ -237,8 +237,6 @@ hr {
 }
 .cart-menu .cart-item {
   display: none;
-  flex-direction: row;
-  align-items: center;
   margin: 9.5% 0 0 2%;
   padding: 2% 5% 0 5%;
   font-size: 1.1rem;
@@ -277,8 +275,9 @@ hr {
   font-size: 1rem;
   font-weight: 700;
   height: 6.5vh;
+  width: 85%;
   padding: 4.8%;
-  margin: 3vh 0vw 3.5vh 6vw;
+  margin: 3vh 0vw 3.5vh 7vw;
   border-radius: 0.6rem;
   background-color: hsl(26deg, 100%, 55%);
   color: hsl(0deg, 0%, 100%);
@@ -324,6 +323,9 @@ hr {
   .cart-menu {
     width: 60vw;
     left: 20vw;
+  }
+  .cart-menu .checkout-btn {
+    margin-left: 5vw;
   }
 }
 /*Desktop queries*/    
@@ -497,6 +499,9 @@ hr {
   .cart-menu {
     top: 9vh;
     left: 55vw;
+  }
+  .cart-menu .checkout-btn {
+    margin-left: 3vw;
   }
 }
 @media (min-width: 85em) {
