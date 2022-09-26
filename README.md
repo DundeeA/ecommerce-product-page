@@ -19,7 +19,7 @@ This is my solution to the [Ecommerce product page challenge on Frontend Mentor]
 ![](./desktop.png)
 
 ### Links
-- Live Site URL: [Live Site]()
+- Live Site URL: [Live Site](https://dundeea.github.io/ecommerce-product-page/)
 
 ## My process
 I started this project by drawing a small wireframe over the original design with the different html5 elements I wanted to include for the sake of semantic mark up. I continued development by breaking the project into several small task that eventually lead to the finished product. 
